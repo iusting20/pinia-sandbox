@@ -1,13 +1,3 @@
-<template>
-  <div class="home">
-    <div class="count">{{ count }}</div>
-    <div class="buttons">
-      <button @click="decreaseCount()">-</button>
-      <button @click="increaseCount()">+</button>
-    </div>
-  </div>
-</template>
-
 <script setup>
 import { ref } from "vue";
 
@@ -21,6 +11,16 @@ const decreaseCount = () => {
   count.value--;
 };
 </script>
+
+<template>
+  <div class="home">
+    <div class="count">{{ count }}</div>
+    <div class="buttons">
+      <button @click="decreaseCount()">-</button>
+      <button @click="increaseCount()">+</button>
+    </div>
+  </div>
+</template>
 
 <style>
 .count {
