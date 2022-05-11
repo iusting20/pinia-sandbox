@@ -23,6 +23,14 @@ const decreaseCount = () => {
     <hr />
 
     <div class="text">This counter is {{ storeCounter.oddOrEven }}</div>
+
+    <hr />
+
+    <div class="editCouter">
+      <b>Edit the counter:</b>
+      <br />
+      <input type="number" v-model="storeCounter.count" />
+    </div>
   </div>
 </template>
 
