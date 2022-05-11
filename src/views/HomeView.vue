@@ -1,12 +1,18 @@
 <template>
   <div class="home">
-    <div class="count">0</div>
+    <div class="count">{{ count }}</div>
     <div class="buttons">
       <button>-</button>
       <button>+</button>
     </div>
   </div>
 </template>
+
+<script setup>
+import { ref } from "vue";
+
+const count = ref(0);
+</script>
 
 <style>
 .count {
