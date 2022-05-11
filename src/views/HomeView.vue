@@ -3,9 +3,6 @@ import { useCounterStore } from "@/stores/counter";
 
 const storeCounter = useCounterStore();
 
-const increaseCount = () => {
-  count.value++;
-};
 
 const decreaseCount = () => {
   count.value--;
