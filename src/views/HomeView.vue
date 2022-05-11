@@ -1,8 +1,5 @@
 <script setup>
-import { ref, computed } from "vue";
 import { useCounterStore } from "@/stores/counter";
-
-const count = ref(0);
 
 const storeCounter = useCounterStore();
 
