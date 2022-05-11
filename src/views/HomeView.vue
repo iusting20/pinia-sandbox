@@ -13,11 +13,6 @@ const increaseCount = () => {
 const decreaseCount = () => {
   count.value--;
 };
-
-const oddOrEven = computed(() => {
-  if (storeCounter.count % 2 === 0) return "even";
-  else return "odd";
-});
 </script>
 
 <template>
@@ -30,7 +25,7 @@ const oddOrEven = computed(() => {
 
     <hr />
 
-    <div class="text">This counter is {{ oddOrEven }}</div>
+    <div class="text">This counter is {{ storeCounter.oddOrEven }}</div>
   </div>
 </template>
 
