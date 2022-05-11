@@ -1,6 +1,5 @@
 <script setup>
-import { ref } from "vue";
-import { computed } from "vue";
+import { ref, computed } from "vue";
 const count = ref(0);
 
 const increaseCount = () => {
